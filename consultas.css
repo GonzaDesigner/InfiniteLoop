@@ -1,0 +1,613 @@
+*{
+    font-family: sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* COMIENZO PARTE HEADER + IMG PRINCIPAL */
+
+header{
+    width: 100%;
+    height: 10vh;
+}
+
+.nav-bar{
+    height: 100%;
+    width: 100%;
+    display: inline-flex;
+    background-color: white;
+}
+
+.nav-bar span{
+    width: 20%;
+    height: 100%;
+    padding: 3px;
+}
+
+.nav-bar span img{
+    height: 99%;
+    width: 99%;
+}
+
+.cont-li{
+    width: 70%;
+    height: 100%;
+    display: inline-flex;
+    padding: 0;
+}
+
+.items{
+    margin: auto;
+    padding: auto;
+    list-style: none;
+}
+
+.link-hd{
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #000;
+}
+
+.link-hd:hover{
+  color: gray;
+  border-bottom: 2px solid gray;
+
+}
+
+.contMenu{
+  visibility: hidden;
+  height: 0;
+  width: 0;
+}
+
+.contIcons-navbar{
+  width: 10%;
+  display: flex;
+  padding: 1px;
+}
+
+.imgIcon-navbar{
+  height: 70%;
+  width: 40%;
+  margin: 1%;
+  margin-top: 5%;
+  cursor: pointer;
+}
+
+.menuBtn{
+    margin: auto;
+    font-size: 1rem;
+}
+
+
+/* FIN PARTE HEADER */
+
+/* HEADER DARK */
+
+.menuBtn_dark{
+  color: #fff;
+  transition: all .2s;
+}
+
+.dark-nav-bar{
+  background-color: rgb(32, 32, 32);
+  transition: all .2s;
+}
+
+.dark-link-hd{
+  color: #fff;
+}
+
+.dark-link-hd:hover{
+  color: #fff;
+  border-bottom: 2px solid #fff
+}
+
+.bodyDark{
+background-color: rgb(32, 32, 32);
+transition: all .2s;
+}
+
+.dark-quienesSomos{
+color: #fff;
+transition: all .2s;
+}
+
+.dark-p{
+color: #fff;
+transition: all .2s;
+}
+
+.imgIcon-navbar-dark{
+  background-color: #fff;
+  padding: 2%;
+}
+
+/* FIN HEADER DARK */
+
+/* BTN DARK MODE */
+
+.contBtn-darkMode{
+    height: 50px;
+    position: fixed;
+    right: 1%;
+    top: 9%;
+    z-index: 1;
+    border-radius: 50%;
+    background-color: #fff;
+    }
+    
+    .contBtn-darkMode:hover{
+    box-shadow: 0px 1px 11px 2px grey;
+    transition: all 0.2s;
+    }
+    
+    .btn-darkMode{
+    padding: 2px;
+    cursor: pointer;
+    height: 100%;
+    }
+    
+    .btnIcon{
+    font-size: 3rem;
+    height: 100%;
+    border-radius: 50%;
+    }
+    
+    /* FIN BTN DARK MODE */
+
+    /* FORMULARIO */
+
+    :root {
+        --color-green: #37af65;
+      }
+
+      body {
+        background-image: linear-gradient(
+            115deg,
+            rgba(126, 126, 126, 0.8),
+            rgba(189, 189, 189, 0.7)
+          ),
+          url('./img/fondo-fixed.jpg');
+      }
+      
+      
+      h1 {
+        font-weight: 400;
+        line-height: 1.2; 
+      }
+      
+      p {
+        font-size: 1.5rem;
+        color: #fff;
+      }
+      
+      h1,
+      p {
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+      }
+      
+      label {
+        display: flex;
+        align-items: center;
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+        color: #fff;
+      }
+      
+      input,
+      button,
+      select,
+      textarea {
+        margin: 0;
+        font-family: inherit;
+        font-size: inherit;
+        line-height: inherit;
+      }
+      
+      button {
+        border: none;
+      }
+      
+      .container {
+        width: 100%;
+        margin: 3.125rem auto 0 auto;
+      }
+      
+      @media (min-width: 576px) {
+        .container {
+          max-width: 540px;
+        }
+      }
+      
+      @media (min-width: 768px) {
+        .container {
+          max-width: 720px;
+        }
+      }
+      
+      .header {
+        padding: 0 0.625rem;
+        margin-bottom: 1.875rem;
+      }
+      
+      .description {
+        font-style: italic;
+        font-weight: 200;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+      }
+      
+      .clue {
+        margin-left: 0.25rem;
+        font-size: 0.9rem;
+        color: #e4e4e4;
+      }
+      
+      .text-center {
+        text-align: center;
+      }
+      
+      /* form */
+
+      .contForm{
+        height: 100vh;
+      }
+      
+      form {
+        padding: 2.5rem 0.625rem;
+        border-radius: 0.25rem;
+        width: 70%;
+        margin: auto;
+        margin-top: 1%;
+      }
+      
+      @media (min-width: 480px) {
+        form {
+          padding: 2.5rem;
+        }
+      }
+      
+      .form-group {
+        margin: 0 auto 1.25rem auto;
+        padding: 0.25rem;
+      }
+      
+      .form-control {
+        display: block;
+        width: 100%;
+        height: 2.375rem;
+        padding: 0.375rem 0.75rem;
+        color: #495057;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: 0.25rem;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      }
+      
+      .form-control:focus {
+        border-color: #80bdff;
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+      }
+      
+      .input-checkbox {
+        display: inline-block;
+        margin-right: 0.625rem;
+        min-height: 1.25rem;
+        min-width: 1.25rem;
+      }
+      
+      .input-textarea {
+        min-height: 120px;
+        width: 100%;
+        padding: 0.625rem;
+        resize: vertical;
+      }
+      
+      .submit-button {
+        display: block;
+        width: 100%;
+        padding: 0.75rem;
+        background: rgba(0, 115, 121);
+        color: inherit;
+        border-radius: 2px;
+      }
+
+      label{
+        color: #fff;
+      }
+      
+      .label-dark{
+        color: #fff;
+        transition: all .2s;
+      }
+
+      .ventanaEmergente{
+        visibility: hidden;
+        width: 50%;
+        height: 50%;
+        position: absolute;
+        top: 0%;
+        bottom: 0%;
+        left: 0%;
+        right: 0%;
+        margin: auto;
+        background-color: #fff;
+      }
+
+      h4{
+        padding-top: 5%;
+        text-align: center;
+        color: #37af65;
+        font-size: 2rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+      }
+
+/* */
+
+
+/* FOOTER */
+
+footer{
+  background-color: #fff;
+  height: 80vh;
+  width: 100%;
+  }
+  
+  .altura{
+      height: 75%;
+  }
+  
+  .contElement{
+      display: inline-flex;
+      width: 100%;
+      margin-top: 1%;
+  }
+  
+  .follow{
+      width: 100%;
+      padding: 5px;
+      font-size: 1.3rem;
+      display: block;
+  }
+  
+  .boxIcons{
+      margin: auto;
+  }
+  
+  .iconTamano{
+  font-size: 2rem;
+  color: #000;
+  }
+  
+  .iconTamano:hover{
+      color: rgb(41, 104, 200);
+      transition: all .3s;
+  }
+  
+  .contMaps{
+  height: 100%;
+  width: 90%;
+  padding-top: 5%;
+  margin: auto;
+  }
+  
+  .maps{
+  height: 100%;
+  width: 100%;
+  border-radius: 3px;
+  }
+
+  .conte{
+    position: relative;
+    height: 2rem;
+    background-color: #000;
+    color: #fff;
+}
+
+.left{
+    position: absolute;
+    left: 1%;
+}
+
+.right{
+    position: absolute;
+    right: 1%;
+}
+
+.right a{
+    text-decoration: none;
+    color: #fff;
+    padding-bottom: 0.5%;
+}
+
+.right a:hover{
+    color: #fff;
+    border-bottom: solid 1px #fff;
+}
+  
+  /* FIN FOOTER */
+  
+  /* FOOTER DARK */
+  
+  .footer-dark{
+  background-color: rgb(32, 32, 32);
+  }
+  
+  .follow-dark{
+      color: #fff;
+  }
+  
+  /* FIN FOOTER DARK */
+
+  /* SCROLL UP */
+
+  .go-top-container{
+    position: fixed;
+    bottom: 4rem;
+    right: -1rem;
+    width: 3.6rem;
+    height: 3.6rem;
+    z-index: -1;
+}
+
+.go-top-buttom{
+    width: 0rem;
+    height: 0rem;
+    background-color: rgb(0, 114, 121); 
+    border-radius: 50%;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.go-top-buttom i{
+    position: absolute;
+    font-size: 1.7rem;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    color: #fff;
+    transition: .2s;
+}
+
+.show{
+    z-index: 10;
+}
+
+.show .go-top-buttom{
+    animation: popup .3s ease-in-out;
+    width: 3rem;
+    height: 3rem;
+    z-index: 1;
+}
+
+.show i{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+@keyframes popup{
+    0%{
+        width: 0rem;
+        height: 0rem;
+    }
+
+    50%{
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    100%{
+        height: 3.6rem;
+        width: 3.6rem;
+    } 
+}
+  
+
+@media(max-width: 700px){
+
+    /* HEADER + NAVBAR*/
+
+    .nav-bar span{
+      width: 70%; 
+      margin: auto;
+  }
+
+    .cont-li{
+        visibility: hidden;
+        width: 0;
+        display: none;
+    }
+
+    .mostrar{
+        position: absolute;
+        display: inline-block;
+        visibility: visible;
+        width: 100%;
+        height: 55%;
+        top: 10%;
+        left: 0%;
+        background:  gray;
+        text-align: center;
+        transition: all .2s;
+    }
+
+    .items {
+
+        margin: 6%;
+        list-style: none;
+        padding: 6px;
+    }
+
+    .items:hover{
+        background-color: rgb(41, 104, 200);
+        transition: all .2s;
+    }
+
+    .contMenu {
+      visibility: visible;
+      height: 100%;
+      width: 10%;
+      margin: auto;
+  }
+
+  #menuBtn {
+      margin: auto;
+      font-size: 2.5rem;
+      padding-top: 30%;
+  }
+
+  .contIcons-navbar{
+      width: 20%;
+      padding: 0%;
+  }
+
+  .imgIcon-navbar{
+      height: 70%;
+      width: 45%;
+  }
+
+    /* -------------- */
+
+    .text-start{
+        font-size: 2rem;
+    }
+
+    .text-end{
+        font-size: 2rem;
+    }
+
+    .productos{
+        padding-top: 10vh;
+    }
+
+    .quienesSomos{
+        width: 50%;
+    }
+
+    .contenedorProd{
+        height: 30vh;
+        width: 95%;
+    }
+
+    .contMaps{
+        height: 55vh;
+    }
+
+    .go-top-container{
+      right: 0rem;
+    }
+
+}
+
+
+
+/* FIN SCROLL UP */
